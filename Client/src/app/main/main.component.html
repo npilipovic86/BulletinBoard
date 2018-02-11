@@ -1,0 +1,21 @@
+<div class="wrapper" *ngIf="boards">
+    <div class="well">Active boards</div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Board</th>
+                <th>Date of creating</th>
+                <th *ngIf="isLoggedIn()">action</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="messages">
+            <tr *ngFor="let board of boards">
+                <td><a routerLink="/boards/{{board.id}}"> {{board.title}}</a></td>
+                <td>{{board.createdDateTime | date : "MM/dd/yyyy HH:mm"}}</td>
+                <td *ngIf="isLoggedIn()">
+                    <button *ngIf="isAdmin()" class="btn btn-danger" (click)="deleteBoard(board)">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

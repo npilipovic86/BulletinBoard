@@ -1,0 +1,14 @@
+.login,
+.alert {
+    margin: 0 auto;
+    width: 50%;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.alert {
+    margin-top: 10px;
+    text-align: center;
+}

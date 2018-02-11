@@ -1,0 +1,9 @@
+.wrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.well{
+    text-align: center;
+    font-weight: bold;
+}
