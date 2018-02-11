@@ -1,3 +1,4 @@
+create database bb;
 
 -- password is 12345 (bcrypt encoded) 
 insert into security_user (username, password, first_name, last_name, role) values 
