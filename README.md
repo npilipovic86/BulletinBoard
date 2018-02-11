@@ -5,4 +5,8 @@ The project is about a portal for a building tenants, where they can read the pu
 MySQL, Java, Node.js, Angular5 
 
 # How to run
-kako startovati projekat po tezama
+1. Create database
+2. Start server
+3. Run sql script
+4. Open browser on localhost:8080
+
